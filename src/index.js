@@ -16,10 +16,8 @@ dogBreedList()
 let ul = document.getElementById("dog-breeds")
 
 ul.addEventListener('click', function (event) {
-    if (event.target.style.color === "red" && event.target.tagName === "LI") {
-        event.target.style.color = "black"
-    } else if (event.target.tagName === "LI") {
-            event.target.style.color = randomColorGenerator() }
+    if (event.target.tagName === "LI") {
+event.target.style.color = randomColorGenerator() }
 })
 
 function randomColorGenerator (){return("#" + ((1 << 24) * Math.random() | 0).toString(16))}
